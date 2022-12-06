@@ -1,0 +1,29 @@
+{
+	"name": "odd-principle",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "vitepress dev . --host",
+		"build": "vitepress build .",
+		"serve": "vitepress serve . --port 80 --host"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LiveReader/odd-principle.git"
+	},
+	"author": "LiveReader GmbH (https://livereader.com)",
+	"contributors": [
+		"Eric Rietzke <eric.rietzke@livereader.de> (https://github.com/eric-rietzke)",
+		"Jason Rietzke <jason.rietzke@livereader.de> (https://github.com/jason-rietzke)",
+		"Carsten Maletzki <carsten.maletzki@dfki.de> (https://github.com/CarstenMaletzki)"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/LiveReader/odd-principle/issues"
+	},
+	"homepage": "https://odd-principle.org/",
+	"devDependencies": {
+		"vitepress": "^1.0.0-alpha.30"
+	}
+}
