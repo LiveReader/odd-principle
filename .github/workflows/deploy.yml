@@ -15,7 +15,7 @@ jobs:
             - name: Build Docs
               run: npm install && npm run build
             - name: Add CNAME
-              run: echo "odd-principle.org" > docs/.vitepress/dist/CNAME
+              run: echo "odd-principle.org" > .vitepress/dist/CNAME
             - name: Deploy to GitHub Pages
               uses: peaceiris/actions-gh-pages@v3
               with:
