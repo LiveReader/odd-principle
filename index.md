@@ -13,7 +13,7 @@ hero:
     actions:
         - theme: brand
           text: Open Ontology
-          link: https://odd-principle.org/base.owl
+          link: https://odd-principle.org/odd-principle.owl
         - theme: alt
           text: View on GitHub
           link: https://github.com/livereader/odd-principle
