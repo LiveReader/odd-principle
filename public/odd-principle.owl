@@ -1,6 +1,1023 @@
 <?xml version="1.0"?>
-<rdf:RDF
+<rdf:RDF xmlns="http://www.odd-principle.org#"
+     xml:base="http://www.odd-principle.org"
+     xmlns:cmn="http://www.odd-principle.org/cmn#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology />
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:odd-bp="http://www.odd-principle.org/bp#"
+     xmlns:odd-es="http://www.odd-principle.org/es#"
+     xmlns:odd-dict="http://www.odd-principle.org/dict#">
+    <owl:Ontology rdf:about="http://www.odd-principle.org"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.odd-principle.org/bp#ap-base -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/bp#ap-base">
+        <rdfs:label>ODD-BP</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#ap-composed-by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/bp#ap-composed-by">
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/bp#composed-by"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#ap-composes -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/bp#ap-composes">
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/bp#composes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#ap-consists-of -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/bp#ap-consists-of">
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/bp#consists-of"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#ap-has-a -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/bp#ap-has-a">
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/bp#has-a"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#ap-part-of -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/bp#ap-part-of">
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/bp#part-of"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/cmn#ap-base -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/cmn#ap-base">
+        <rdfs:label>ODD-Common</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/cmn#ap-review-required -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/cmn#ap-review-required">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/cmn#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/cmn#ap-schema-definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/cmn#ap-schema-definition">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/cmn#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/dict#ap-base -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/dict#ap-base">
+        <rdfs:label>ODD-Dictionary</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/dict#ap-parent-symbol -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/dict#ap-parent-symbol">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/dict#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#ap-base -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/es#ap-base">
+        <rdfs:label>ODD-ES</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#ap-contained-in -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/es#ap-contained-in">
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/es#contained-in"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#ap-contains -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/es#ap-contains">
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/es#contains"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#ap-input-of -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/es#ap-input-of">
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/es#input-of"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#ap-inputs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/es#ap-inputs">
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/es#inputs"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#ap-output-of -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/es#ap-output-of">
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/es#output-of"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#ap-outputs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/es#ap-outputs">
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/es#outputs"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.odd-principle.org/bp#assigned -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#assigned">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#assigned"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#role"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#usertask"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#composed-by -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#composed-by">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#composes"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#dataobject"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#dataobject"/>
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/bp#ap-composed-by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#composes -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#composes">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#dataobject"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#dataobject"/>
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/bp#ap-composes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#consists-of -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#consists-of">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#part-of"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#dataobject"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#attribute"/>
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/bp#ap-consists-of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#contained-in -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#contained-in">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#contains"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#dataobject"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#document"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#task"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#process"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#dataobject"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#document"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#task"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#copied-by -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#copied-by">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#copy-of"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#process"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#copy-of -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#copy-of">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#process"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#delivered-by -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#delivered-by">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#delivers"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#attribute"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#dataobject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#delivers -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#delivers">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#task"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#attribute"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#dataobject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#demanded-by -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#demanded-by">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#demands"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#document"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#demands -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#demands">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#task"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#has-a -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#has-a">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#has-a"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#dataobject"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#dataobject"/>
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/bp#ap-has-a"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#involved-in -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#involved-in">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#involves"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#actor"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#involves">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#process"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#op-base -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#op-base">
+        <rdfs:label>ODD-BP</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#part-of -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#part-of">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#attribute"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#dataobject"/>
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/bp#ap-part-of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#performed-by -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#performed-by">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#performs"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#systemtask"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#performs -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#performs">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#agent"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#systemtask"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#played-by -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#played-by">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#plays"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#role"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#user"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#plays -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#plays">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#user"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#preceded-by -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#preceded-by">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#precedes"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#task"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#precedes -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#precedes">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#task"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#produced-by -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#produced-by">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#produces"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#document"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#produces">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#task"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#provided-by -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#provided-by">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#provides"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#attribute"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#dataobject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#provides -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#provides">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#document"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#attribute"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#dataobject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#required-by -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#required-by">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/bp#requires"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#attribute"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#dataobject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/bp#task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/bp#requires">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/bp#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/bp#task"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#attribute"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#dataobject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/cmn#op-base -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/cmn#op-base">
+        <rdfs:label>ODD-Common</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/dict#op-base -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/dict#op-base">
+        <rdfs:label>ODD-Dictionary</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#contained-in -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/es#contained-in">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/es#contains"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#dataobject"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/es#function"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/es#fragment"/>
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/es#ap-contained-in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/es#contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/es#fragment"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#dataobject"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/es#function"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/es#ap-contains"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#input-of -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/es#input-of">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/es#inputs"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#attribute"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#dataobject"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/es#output"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/es#function"/>
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/es#ap-input-of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#inputs -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/es#inputs">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/es#function"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#attribute"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/bp#dataobject"/>
+                    <rdf:Description rdf:about="http://www.odd-principle.org/es#output"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/es#ap-inputs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#op-base -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/es#op-base">
+        <rdfs:label>ODD-ES</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#output-of -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/es#output-of">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#op-base"/>
+        <owl:inverseOf rdf:resource="http://www.odd-principle.org/es#outputs"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/es#output"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/es#function"/>
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/es#ap-output-of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#outputs -->
+
+    <owl:ObjectProperty rdf:about="http://www.odd-principle.org/es#outputs">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#op-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/es#function"/>
+        <rdfs:range rdf:resource="http://www.odd-principle.org/es#output"/>
+        <cmn:ap-schema-definition rdf:resource="http://www.odd-principle.org/es#ap-outputs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.odd-principle.org/bp#dp-base -->
+
+    <owl:DatatypeProperty rdf:about="http://www.odd-principle.org/bp#dp-base">
+        <rdfs:label>ODD-BP</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/cmn#dp-base -->
+
+    <owl:DatatypeProperty rdf:about="http://www.odd-principle.org/cmn#dp-base">
+        <rdfs:label>ODD-Common</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/dict#definition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.odd-principle.org/dict#definition">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/dict#dp-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/dict#symbol"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/dict#dp-base -->
+
+    <owl:DatatypeProperty rdf:about="http://www.odd-principle.org/dict#dp-base">
+        <rdfs:label>ODD-Dictionary</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/dict#synonym -->
+
+    <owl:DatatypeProperty rdf:about="http://www.odd-principle.org/dict#synonym">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/dict#dp-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/dict#symbol"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#certainty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.odd-principle.org/es#certainty">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#dp-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/es#output"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#dp-base -->
+
+    <owl:DatatypeProperty rdf:about="http://www.odd-principle.org/es#dp-base">
+        <rdfs:label>ODD-ES</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#explanation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.odd-principle.org/es#explanation">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#dp-base"/>
+        <rdfs:domain rdf:resource="http://www.odd-principle.org/es#output"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/es#value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.odd-principle.org/es#value">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/es#dp-base"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.odd-principle.org/bp#actor -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#actor">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#agent -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#agent">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#attribute -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#attribute">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#cl-base -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#cl-base">
+        <rdfs:label>ODD-BP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#dataobject -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#dataobject">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#datavalue -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#datavalue">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#document -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#document">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#goal -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#goal">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#process-state"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#goal-relevant -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#goal-relevant">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#relevance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#placeholder -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#placeholder">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#process -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#process">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#process-definition -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#process-definition">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#process-instance -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#process-instance">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#process-state -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#process-state">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#relevance -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#relevance">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#process-state"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#relevant -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#relevant">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#relevance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#role -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#role">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#systemtask -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#systemtask">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#task -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#task">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#unexecutable -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#unexecutable">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#unexecuted"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#unexecuted -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#unexecuted">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#process-state"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#user -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#user">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/bp#usertask -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/bp#usertask">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/bp#task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/cmn#cl-base -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/cmn#cl-base">
+        <rdfs:label>ODD-Common</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/dict#cl-base -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/dict#cl-base">
+        <rdfs:label>ODD-Dictionary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/dict#symbol -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/dict#symbol">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/es#cl-base -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/es#cl-base">
+        <rdfs:label>ODD-ES</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/es#fragment -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/es#fragment">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/es#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/es#function -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/es#function">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/es#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/es#output -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/es#output">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/es#cl-base"/>
+    </owl:Class>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
