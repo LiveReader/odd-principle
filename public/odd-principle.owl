@@ -819,24 +819,6 @@
     
 
 
-    <!-- http://www.odd-principle.org/dict#dp-definition -->
-
-    <owl:DatatypeProperty rdf:about="http://www.odd-principle.org/dict#dp-definition">
-        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/dict#dp-base"/>
-        <rdfs:domain rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.odd-principle.org/dict#dp-synonym -->
-
-    <owl:DatatypeProperty rdf:about="http://www.odd-principle.org/dict#dp-synonym">
-        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/dict#dp-base"/>
-        <rdfs:domain rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.odd-principle.org/es#dp-base -->
 
     <owl:DatatypeProperty rdf:about="http://www.odd-principle.org/es#dp-base">
