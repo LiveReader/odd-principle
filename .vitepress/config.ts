@@ -26,6 +26,10 @@ export default {
 		siteTitle: title,
 		logo: "/icons/odd-frame.png",
 		nav: [
+			{ text: "Common", link: "/cmn" },
+			{ text: "Dictionary", link: "/dict" },
+			{ text: "Business Process", link: "/bp" },
+			{ text: "Expert System", link: "/es" },
 			{
 				text: "LiveReader",
 				items: [

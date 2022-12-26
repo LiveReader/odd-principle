@@ -15,6 +15,18 @@ hero:
           text: Open Ontology
           link: https://odd-principle.org/odd-principle.owl
         - theme: alt
+          text: Common
+          link: /cmn
+        - theme: alt
+          text: Dictionary
+          link: /dict
+        - theme: alt
+          text: Business Process
+          link: /bp
+        - theme: alt
+          text: Expert System
+          link: /es
+        - theme: alt
           text: View on GitHub
           link: https://github.com/livereader/odd-principle
 
