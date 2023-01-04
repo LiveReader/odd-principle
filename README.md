@@ -4,7 +4,7 @@
 
 # ODD Principle
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/livereader/odd-principle/Deploy?label=docs)](https://odd-principle.org)
+[![Docs](https://img.shields.io/github/actions/workflow/status/livereader/odd-principle/deploy.yml?branch=main&label=docs)](https://odd-principle.org)
 
 ODD (Ontology & Data Driven) Principle is the ontology metamodel for building applications based on these methodologies.  
 The [Ontology](https://odd-principle.org/odd-principle.owl) along with the [documentation](https://odd-principle.org) is published at [odd-principle.org](https://odd-principle.org).
