@@ -27,6 +27,9 @@ hero:
           text: Expert System
           link: /es
         - theme: alt
+          text: Open Resources
+          link: /resources
+        - theme: alt
           text: View on GitHub
           link: https://github.com/livereader/odd-principle
 

@@ -30,6 +30,7 @@ export default {
 			{ text: "Dictionary", link: "/dict" },
 			{ text: "Business Process", link: "/bp" },
 			{ text: "Expert System", link: "/es" },
+			{ text: "Resources", link: "/resources" },
 			{
 				text: "LiveReader",
 				items: [

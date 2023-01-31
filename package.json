@@ -25,5 +25,9 @@
 	"homepage": "https://odd-principle.org/",
 	"devDependencies": {
 		"vitepress": "^1.0.0-alpha.30"
+	},
+	"dependencies": {
+		"@jamescoyle/vue-icon": "^0.1.2",
+		"@mdi/js": "^7.1.96"
 	}
 }
