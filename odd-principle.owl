@@ -97,6 +97,22 @@
     
 
 
+    <!-- http://www.odd-principle.org/cmn#ap-datatype -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/cmn#ap-datatype">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/cmn#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.odd-principle.org/cmn#ap-enumeration-item -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/cmn#ap-enumeration-item">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/cmn#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.odd-principle.org/cmn#ap-inverse-of -->
 
     <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/cmn#ap-inverse-of">
@@ -991,6 +1007,86 @@ Note: This Process State can not be deduced, since we would have to identify som
     
 
 
+    <!-- http://www.odd-principle.org#00000000-0000-0000-0000-000000000100 -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000100">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
+        <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <rdfs:comment xml:lang="en">basic computing representation of truth and falsehood</rdfs:comment>
+        <rdfs:label xml:lang="en">boolean</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q520777</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org#00000000-0000-0000-0000-000000000101 -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000101">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
+        <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <rdfs:comment xml:lang="de">Wahrheitswert</rdfs:comment>
+        <rdfs:comment xml:lang="en">truth value</rdfs:comment>
+        <rdfs:label xml:lang="de">Wahr</rdfs:label>
+        <rdfs:label xml:lang="en">true</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q16751793</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org#00000000-0000-0000-0000-000000000102 -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000102">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
+        <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <rdfs:comment xml:lang="de">falscher Wert</rdfs:comment>
+        <rdfs:comment xml:lang="en">falsy value</rdfs:comment>
+        <rdfs:label xml:lang="de">Falsch</rdfs:label>
+        <rdfs:label xml:lang="en">false</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q5432619</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org#00000000-0000-0000-0000-000000000103 -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000103">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
+        <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <rdfs:comment xml:lang="en">data type representing a finite sequence of encoded characters</rdfs:comment>
+        <rdfs:label xml:lang="en">string</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q184754</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org#00000000-0000-0000-0000-000000000104 -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000104">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
+        <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <rdfs:comment xml:lang="en">data type that represents a number</rdfs:comment>
+        <rdfs:label xml:lang="en">number</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q113573759</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org#00000000-0000-0000-0001-000000000000 -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
+        <odd-dict:ap-has-child rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000100"/>
+        <odd-dict:ap-has-child rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000101"/>
+        <odd-dict:ap-has-child rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000102"/>
+        <odd-dict:ap-has-child rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000103"/>
+        <odd-dict:ap-has-child rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000104"/>
+        <rdfs:comment xml:lang="en">basic data type which can be instanciated and used with the predefined operations of a programming language, or assembled as a building block together with other instances of any type to create more complex composite data types</rdfs:comment>
+        <rdfs:label xml:lang="en">datatype</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1188648</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://www.odd-principle.org/bp#cl-actor -->
 
     <owl:Class rdf:about="http://www.odd-principle.org/bp#cl-actor">
@@ -1217,10 +1313,47 @@ Note: This Process State can not be deduced, since we would have to identify som
     
 
 
+    <!-- http://www.odd-principle.org/cmn#boolean -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/cmn#boolean">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/cmn#cl-datatype"/>
+        <cmn:ap-enumeration-item rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000101"/>
+        <cmn:ap-enumeration-item rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000102"/>
+        <odd-dict:ap-refers-to rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000100"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.odd-principle.org/cmn#cl-base -->
 
     <owl:Class rdf:about="http://www.odd-principle.org/cmn#cl-base">
         <rdfs:label>ODD-Common</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/cmn#cl-datatype -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/cmn#cl-datatype">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/cmn#cl-base"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/cmn#number -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/cmn#number">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/cmn#cl-datatype"/>
+        <odd-dict:ap-refers-to rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000104"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/cmn#string -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/cmn#string">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/cmn#cl-datatype"/>
+        <odd-dict:ap-refers-to rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000103"/>
     </owl:Class>
     
 
