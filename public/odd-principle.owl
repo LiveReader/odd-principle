@@ -89,6 +89,14 @@
     
 
 
+    <!-- http://www.odd-principle.org/cmn#ap-array-type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/cmn#ap-array-type">
+        <rdfs:subPropertyOf rdf:resource="http://www.odd-principle.org/cmn#ap-base"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.odd-principle.org/cmn#ap-base -->
 
     <owl:AnnotationProperty rdf:about="http://www.odd-principle.org/cmn#ap-base">
@@ -1071,6 +1079,60 @@ Note: This Process State can not be deduced, since we would have to identify som
     
 
 
+    <!-- http://www.odd-principle.org#00000000-0000-0000-0000-000000000105 -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000105">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
+        <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <rdfs:comment xml:lang="en">particular day represented within a calendar system</rdfs:comment>
+        <rdfs:label xml:lang="en">date</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q205892</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org#00000000-0000-0000-0000-000000000106 -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000106">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
+        <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <rdfs:comment xml:lang="en">designation of a point in time</rdfs:comment>
+        <rdfs:label xml:lang="en">time</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q14333806</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org#00000000-0000-0000-0000-000000000107 -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000107">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
+        <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <rdfs:comment xml:lang="en">system for identifying instants in time; the number of seconds that have elapsed since the UTC midnight before 1 January 1970, ignoring leap seconds</rdfs:comment>
+        <rdfs:label xml:lang="en">timestamp</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q14654</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org#00000000-0000-0000-0000-000000000108 -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000108">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
+        <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <rdfs:comment xml:lang="de">Zusammenstellung von sorgfältig ausgewählten Objekten mit gemeinsamen Eigenschaften
+
+technisch eine Array Datanstruktur</rdfs:comment>
+        <rdfs:comment xml:lang="en">set of purposefully gathered physical or digital objects with some common characteristics
+
+technically an array datastructure</rdfs:comment>
+        <rdfs:label xml:lang="de">Sammlung</rdfs:label>
+        <rdfs:label xml:lang="en">collection</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2668072</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://www.odd-principle.org#00000000-0000-0000-0001-000000000000 -->
 
     <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000">
@@ -1080,6 +1142,10 @@ Note: This Process State can not be deduced, since we would have to identify som
         <odd-dict:ap-has-child rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000102"/>
         <odd-dict:ap-has-child rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000103"/>
         <odd-dict:ap-has-child rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000104"/>
+        <odd-dict:ap-has-child rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000105"/>
+        <odd-dict:ap-has-child rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000106"/>
+        <odd-dict:ap-has-child rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000107"/>
+        <odd-dict:ap-has-child rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000108"/>
         <rdfs:comment xml:lang="en">basic data type which can be instanciated and used with the predefined operations of a programming language, or assembled as a building block together with other instances of any type to create more complex composite data types</rdfs:comment>
         <rdfs:label xml:lang="en">datatype</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1188648</rdfs:seeAlso>
@@ -1313,6 +1379,15 @@ Note: This Process State can not be deduced, since we would have to identify som
     
 
 
+    <!-- http://www.odd-principle.org/cmn#array -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/cmn#array">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/cmn#cl-datatype"/>
+        <odd-dict:ap-refers-to rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000108"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.odd-principle.org/cmn#boolean -->
 
     <owl:Class rdf:about="http://www.odd-principle.org/cmn#boolean">
@@ -1340,6 +1415,15 @@ Note: This Process State can not be deduced, since we would have to identify som
     
 
 
+    <!-- http://www.odd-principle.org/cmn#date -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/cmn#date">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/cmn#cl-datatype"/>
+        <odd-dict:ap-refers-to rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000105"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.odd-principle.org/cmn#number -->
 
     <owl:Class rdf:about="http://www.odd-principle.org/cmn#number">
@@ -1354,6 +1438,24 @@ Note: This Process State can not be deduced, since we would have to identify som
     <owl:Class rdf:about="http://www.odd-principle.org/cmn#string">
         <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/cmn#cl-datatype"/>
         <odd-dict:ap-refers-to rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000103"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/cmn#time -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/cmn#time">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/cmn#cl-datatype"/>
+        <odd-dict:ap-refers-to rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000106"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.odd-principle.org/cmn#timestamp -->
+
+    <owl:Class rdf:about="http://www.odd-principle.org/cmn#timestamp">
+        <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/cmn#cl-datatype"/>
+        <odd-dict:ap-refers-to rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0000-000000000107"/>
     </owl:Class>
     
 
