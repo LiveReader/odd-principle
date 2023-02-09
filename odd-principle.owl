@@ -1020,6 +1020,7 @@ Note: This Process State can not be deduced, since we would have to identify som
     <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000100">
         <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
         <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <odd-dict:ap-referred-by rdf:resource="http://www.odd-principle.org/cmn#boolean"/>
         <rdfs:comment xml:lang="en">basic computing representation of truth and falsehood</rdfs:comment>
         <rdfs:label xml:lang="en">boolean</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q520777</rdfs:seeAlso>
@@ -1032,10 +1033,24 @@ Note: This Process State can not be deduced, since we would have to identify som
     <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000101">
         <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
         <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
-        <rdfs:comment xml:lang="de">Wahrheitswert</rdfs:comment>
         <rdfs:comment xml:lang="en">truth value</rdfs:comment>
-        <rdfs:label xml:lang="de">Wahr</rdfs:label>
+        <rdfs:comment xml:lang="de">Wahrheitswert</rdfs:comment>
+        <rdfs:comment xml:lang="fr"></rdfs:comment>
+        <rdfs:comment xml:lang="be">лягічнае значэньне</rdfs:comment>
+        <rdfs:comment xml:lang="eo"></rdfs:comment>
+        <rdfs:comment xml:lang="es">Que es verdadero</rdfs:comment>
+        <rdfs:comment xml:lang="it"></rdfs:comment>
+        <rdfs:comment xml:lang="ru">значение булевой переменной</rdfs:comment>
+        <rdfs:comment xml:lang="sv"></rdfs:comment>
         <rdfs:label xml:lang="en">true</rdfs:label>
+        <rdfs:label xml:lang="de">wahr</rdfs:label>
+        <rdfs:label xml:lang="fr">vrai</rdfs:label>
+        <rdfs:label xml:lang="be">ісьціна</rdfs:label>
+        <rdfs:label xml:lang="eo">vero</rdfs:label>
+        <rdfs:label xml:lang="es">cierto</rdfs:label>
+        <rdfs:label xml:lang="it">vero</rdfs:label>
+        <rdfs:label xml:lang="ru">истина</rdfs:label>
+        <rdfs:label xml:lang="sv">sann</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q16751793</rdfs:seeAlso>
     </owl:Class>
     
@@ -1046,10 +1061,44 @@ Note: This Process State can not be deduced, since we would have to identify som
     <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000102">
         <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
         <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
-        <rdfs:comment xml:lang="de">falscher Wert</rdfs:comment>
-        <rdfs:comment xml:lang="en">falsy value</rdfs:comment>
-        <rdfs:label xml:lang="de">Falsch</rdfs:label>
+        <rdfs:comment xml:lang="en">truth value</rdfs:comment>
+        <rdfs:comment xml:lang="de">Wahrheitswert</rdfs:comment>
+        <rdfs:comment xml:lang="fr">contraire de vrai</rdfs:comment>
+        <rdfs:comment xml:lang="ar"></rdfs:comment>
+        <rdfs:comment xml:lang="be">лягічнае значэньне</rdfs:comment>
+        <rdfs:comment xml:lang="kur"></rdfs:comment>
+        <rdfs:comment xml:lang="da">sandhedsværdi</rdfs:comment>
+        <rdfs:comment xml:lang="eo"></rdfs:comment>
+        <rdfs:comment xml:lang="es">que no es verdadero</rdfs:comment>
+        <rdfs:comment xml:lang="it"></rdfs:comment>
+        <rdfs:comment xml:lang="ja"></rdfs:comment>
+        <rdfs:comment xml:lang="ko"></rdfs:comment>
+        <rdfs:comment xml:lang="pt"></rdfs:comment>
+        <rdfs:comment xml:lang="rum"></rdfs:comment>
+        <rdfs:comment xml:lang="ru">значение логической переменной</rdfs:comment>
+        <rdfs:comment xml:lang="sv"></rdfs:comment>
+        <rdfs:comment xml:lang="tr"></rdfs:comment>
+        <rdfs:comment xml:lang="uk"></rdfs:comment>
+        <rdfs:comment xml:lang="zh"></rdfs:comment>
         <rdfs:label xml:lang="en">false</rdfs:label>
+        <rdfs:label xml:lang="de">falsch</rdfs:label>
+        <rdfs:label xml:lang="fr">faux</rdfs:label>
+        <rdfs:label xml:lang="ar">خاطئ</rdfs:label>
+        <rdfs:label xml:lang="be">хлусьня</rdfs:label>
+        <rdfs:label xml:lang="kur">زڕ (لۆژیک)</rdfs:label>
+        <rdfs:label xml:lang="da">falsk</rdfs:label>
+        <rdfs:label xml:lang="eo">malvero</rdfs:label>
+        <rdfs:label xml:lang="es">falso</rdfs:label>
+        <rdfs:label xml:lang="it">falso</rdfs:label>
+        <rdfs:label xml:lang="ja">偽</rdfs:label>
+        <rdfs:label xml:lang="ko">거짓</rdfs:label>
+        <rdfs:label xml:lang="pt">falso</rdfs:label>
+        <rdfs:label xml:lang="rum">fals</rdfs:label>
+        <rdfs:label xml:lang="ru">ложь</rdfs:label>
+        <rdfs:label xml:lang="sv">falsk</rdfs:label>
+        <rdfs:label xml:lang="tr">Yanlış</rdfs:label>
+        <rdfs:label xml:lang="uk">Хиба</rdfs:label>
+        <rdfs:label xml:lang="zh">假</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q5432619</rdfs:seeAlso>
     </owl:Class>
     
@@ -1060,6 +1109,7 @@ Note: This Process State can not be deduced, since we would have to identify som
     <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000103">
         <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
         <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <odd-dict:ap-referred-by rdf:resource="http://www.odd-principle.org/cmn#string"/>
         <rdfs:comment xml:lang="en">data type representing a finite sequence of encoded characters</rdfs:comment>
         <rdfs:label xml:lang="en">string</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q184754</rdfs:seeAlso>
@@ -1072,6 +1122,7 @@ Note: This Process State can not be deduced, since we would have to identify som
     <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000104">
         <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
         <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <odd-dict:ap-referred-by rdf:resource="http://www.odd-principle.org/cmn#number"/>
         <rdfs:comment xml:lang="en">data type that represents a number</rdfs:comment>
         <rdfs:label xml:lang="en">number</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q113573759</rdfs:seeAlso>
@@ -1084,6 +1135,7 @@ Note: This Process State can not be deduced, since we would have to identify som
     <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000105">
         <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
         <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <odd-dict:ap-referred-by rdf:resource="http://www.odd-principle.org/cmn#date"/>
         <rdfs:comment xml:lang="en">particular day represented within a calendar system</rdfs:comment>
         <rdfs:label xml:lang="en">date</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q205892</rdfs:seeAlso>
@@ -1096,6 +1148,7 @@ Note: This Process State can not be deduced, since we would have to identify som
     <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000106">
         <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
         <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <odd-dict:ap-referred-by rdf:resource="http://www.odd-principle.org/cmn#time"/>
         <rdfs:comment xml:lang="en">designation of a point in time</rdfs:comment>
         <rdfs:label xml:lang="en">time</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q14333806</rdfs:seeAlso>
@@ -1108,6 +1161,7 @@ Note: This Process State can not be deduced, since we would have to identify som
     <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000107">
         <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
         <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
+        <odd-dict:ap-referred-by rdf:resource="http://www.odd-principle.org/cmn#timestamp"/>
         <rdfs:comment xml:lang="en">system for identifying instants in time; the number of seconds that have elapsed since the UTC midnight before 1 January 1970, ignoring leap seconds</rdfs:comment>
         <rdfs:label xml:lang="en">timestamp</rdfs:label>
         <rdfs:seeAlso>https://www.wikidata.org/wiki/Q14654</rdfs:seeAlso>
@@ -1120,15 +1174,10 @@ Note: This Process State can not be deduced, since we would have to identify som
     <owl:Class rdf:about="http://www.odd-principle.org#00000000-0000-0000-0000-000000000108">
         <rdfs:subClassOf rdf:resource="http://www.odd-principle.org/dict#cl-symbol"/>
         <odd-dict:ap-has-parent rdf:resource="http://www.odd-principle.org#00000000-0000-0000-0001-000000000000"/>
-        <rdfs:comment xml:lang="de">Zusammenstellung von sorgfältig ausgewählten Objekten mit gemeinsamen Eigenschaften
-
-technisch eine Array Datanstruktur</rdfs:comment>
-        <rdfs:comment xml:lang="en">set of purposefully gathered physical or digital objects with some common characteristics
-
-technically an array datastructure</rdfs:comment>
-        <rdfs:label xml:lang="de">Sammlung</rdfs:label>
-        <rdfs:label xml:lang="en">collection</rdfs:label>
-        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2668072</rdfs:seeAlso>
+        <odd-dict:ap-referred-by rdf:resource="http://www.odd-principle.org/cmn#array"/>
+        <rdfs:comment xml:lang="en">data structure</rdfs:comment>
+        <rdfs:label xml:lang="en">array</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q186152</rdfs:seeAlso>
     </owl:Class>
     
 
